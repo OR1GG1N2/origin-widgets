@@ -261,7 +261,7 @@ const initSettings = () => {
   if (channels.twitch) modes.push('twitch');
   if (channels.youtube) modes.push('youtube');
 
-  if (modes.length > 1 && p.get('cycle') !== 'false') {
+  if (modes.length > 1 && p.get('animate') !== 'false') {
     let idx = 0;
     cycleTimer.value = setInterval(() => {
       idx = (idx + 1) % modes.length;

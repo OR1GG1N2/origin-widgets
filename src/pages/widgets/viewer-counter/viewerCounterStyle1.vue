@@ -228,7 +228,7 @@ const initSettings = () => {
   if (modes.length === 2) {
     // Single platform — show it right away, no cycling
     displayMode.value = modes[1];
-  } else if (modes.length > 2 && p.get('cycle') !== 'false') {
+  } else if (modes.length > 2 && p.get('animate') !== 'false') {
     let i = 0;
     cycleTimer.value = setInterval(() => {
       i = (i + 1) % modes.length;
