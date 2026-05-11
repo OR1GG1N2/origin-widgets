@@ -41,16 +41,6 @@ const routes: RouteRecordRaw[] = [
       component: () => import('../pages/widgets/now-playing/nowPlayingWidget.vue')
     },
     {
-      path: '/1',
-      name: '1',
-      component: () => import('../pages/widgets/goal/1.vue')
-    },
-    {
-      path: '/2',
-      name: '1',
-      component: () => import('../pages/widgets/goal/2.vue')
-    },
-    {
       path: '/lottie',
       name: 'Widget Studio • Lottie',
       meta: { title: 'Widget Studio • Lottie' },
