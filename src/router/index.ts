@@ -34,6 +34,18 @@ const routes: RouteRecordRaw[] = [
     meta: { title: 'Widget Studio • Счетчик зрителей 2' },
     component: viewerCounter2
   },
+    {
+      path: '/widget/nowplaying',
+      name: 'Widget Studio • Сейчас играет',
+      meta: { title: 'Widget Studio • Сейчас играет' },
+      component: () => import('../pages/widgets/now-playing/nowPlayingWidget.vue')
+    },
+    {
+      path: '/lottie',
+      name: 'Widget Studio • Lottie',
+      meta: { title: 'Widget Studio • Lottie' },
+      component: () => import('../pages/widgets/lotti-widget.vue')
+    }
   
 ]
 
