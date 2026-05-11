@@ -1,6 +1,9 @@
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from "vue"
 import PlayerVer1 from '../../../components/NowPlayWidget/PlayerVer1.vue';
+import PlayerVer2 from '../../../components/NowPlayWidget/PlayerVer2.vue';
+import PlayerVer3 from '../../../components/NowPlayWidget/PlayerVer3.vue';
+
 const username = ref("Or1GG1n")
 const track = ref(null)
 const loading = ref(true)
@@ -63,5 +66,9 @@ onBeforeUnmount(() => {
 
 <template>
   <PlayerVer1 :track="track" />
+  <PlayerVer2 :track="track" />
+  <PlayerVer3 :track="track" />
+
+
 
 </template>
